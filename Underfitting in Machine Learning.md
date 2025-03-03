@@ -8,76 +8,8 @@ Think of underfitting like studying only the chapter titles for an exam - you'll
 
 ## Visual Understanding of Underfitting
 
-<div align="center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="700">
-    <!-- Background -->
-    <rect width="800" height="400" fill="#ffffff"/>
-    
-    <!-- Axes -->
-    <line x1="50" y1="350" x2="750" y2="350" stroke="#000000" stroke-width="2"/>
-    <line x1="50" y1="50" x2="50" y2="350" stroke="#000000" stroke-width="2"/>
-    
-    <!-- X-axis label -->
-    <text x="400" y="390" text-anchor="middle" font-family="Arial" font-size="16">Feature X</text>
-    
-    <!-- Y-axis label -->
-    <text x="20" y="200" text-anchor="middle" font-family="Arial" font-size="16" transform="rotate(-90, 20, 200)">Target Y</text>
-    
-    <!-- Title -->
-    <text x="400" y="30" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="20">Underfitting in Machine Learning</text>
-    
-    <!-- Data points (following a quadratic pattern) -->
-    <circle cx="100" cy="280" r="6" fill="#333333"/>
-    <circle cx="150" cy="250" r="6" fill="#333333"/>
-    <circle cx="200" cy="200" r="6" fill="#333333"/>
-    <circle cx="250" cy="180" r="6" fill="#333333"/>
-    <circle cx="300" cy="150" r="6" fill="#333333"/>
-    <circle cx="350" cy="140" r="6" fill="#333333"/>
-    <circle cx="400" cy="150" r="6" fill="#333333"/>
-    <circle cx="450" cy="170" r="6" fill="#333333"/>
-    <circle cx="500" cy="210" r="6" fill="#333333"/>
-    <circle cx="550" cy="240" r="6" fill="#333333"/>
-    <circle cx="600" cy="260" r="6" fill="#333333"/>
-    <circle cx="650" cy="290" r="6" fill="#333333"/>
-    <circle cx="700" cy="320" r="6" fill="#333333"/>
-    
-    <!-- True underlying pattern (parabola) -->
-    <path d="M 100 280 Q 400 120 700 320" stroke="#0066cc" stroke-width="3" stroke-dasharray="5,5" fill="none"/>
-    <text x="180" y="80" font-family="Arial" font-size="14" fill="#0066cc">True Pattern (Non-linear)</text>
-    
-    <!-- Underfitting Model (straight line) -->
-    <path d="M 100 270 L 700 200" stroke="#00aa00" stroke-width="3" fill="none"/>
-    <text x="560" y="170" font-family="Arial" font-size="14" fill="#00aa00">Underfitting Model (Linear)</text>
-    
-    <!-- High error regions -->
-    <line x1="100" y1="280" x2="100" y2="270" stroke="#ff6666" stroke-width="2"/>
-    <line x1="200" y1="200" x2="200" y2="248" stroke="#ff6666" stroke-width="2"/>
-    <line x1="350" y1="140" x2="350" y2="227" stroke="#ff6666" stroke-width="2"/>
-    <line x1="500" y1="210" x2="500" y2="213" stroke="#ff6666" stroke-width="2"/>
-    <line x1="650" y1="290" x2="650" y2="200" stroke="#ff6666" stroke-width="2"/>
-    
-    <!-- Error annotation -->
-    <path d="M 350 140 Q 400 120 450 160" stroke="#ff6666" stroke-width="2" fill="none" stroke-dasharray="4,2"/>
-    <text x="450" y="150" font-family="Arial" font-size="14" fill="#ff6666">Large Error</text>
-    
-    <!-- Model performance annotations -->
-    <text x="250" y="80" font-family="Arial" font-size="14" fill="#00aa00">Training Error: High</text>
-    <text x="250" y="100" font-family="Arial" font-size="14" fill="#00aa00">Testing Error: High</text>
-    
-    <!-- Legend -->
-    <rect x="580" y="260" width="180" height="80" fill="#ffffff" stroke="#000000"/>
-    <text x="590" y="280" font-family="Arial" font-size="14">Legend:</text>
-    
-    <circle cx="600" cy="300" r="6" fill="#333333"/>
-    <text x="620" y="304" font-family="Arial" font-size="14">Data Points</text>
-    
-    <line x1="590" y1="320" x2="610" y2="320" stroke="#0066cc" stroke-width="3" stroke-dasharray="5,5"/>
-    <text x="620" y="324" font-family="Arial" font-size="14">True Pattern</text>
-    
-    <line x1="590" y1="340" x2="610" y2="340" stroke="#00aa00" stroke-width="3"/>
-    <text x="620" y="344" font-family="Arial" font-size="14">Underfitted Model</text>
-  </svg>
-</div>
+![image](https://github.com/user-attachments/assets/d2f7bb3b-21f6-4919-b454-48dba42d1afc)
+
 
 *Figure 1: Illustration of underfitting in regression*
 
